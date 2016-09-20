@@ -19,7 +19,7 @@ node {
     withCredentials(
         [[
             $class: 'UsernamePasswordMultiBinding',
-            credentialsId: 'throwaway123321',
+            credentialsId: 'dockerhub-meaningful-throwaway',
             passwordVariable: 'DOCKERHUB_PASSWORD',
             usernameVariable: 'DOCKERHUB_USERNAME'
         ]]
