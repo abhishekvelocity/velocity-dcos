@@ -35,7 +35,7 @@ stage 'Deploy'
 marathon(
     url: 'http://marathon.mesos:8080',
     forceUpdate: false,
-    credentialsId: 'dockerhub-meaningful-throwaway',
+    credentialsId: 'dcos-token',
     filename: 'marathon.json',
     appId: 'dockerhub-meaningful-throwaway',
     docker: "throwaway123321/velocity-dcos:${gitCommit()}".toString()
