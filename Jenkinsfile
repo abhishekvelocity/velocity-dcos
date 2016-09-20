@@ -37,6 +37,6 @@ marathon(
     forceUpdate: false,
     credentialsId: 'dcos-token',
     filename: 'marathon.json',
-    appId: 'dockerhub-meaningful-throwaway',
+    appId: 'nginx-mesosphere-abc',
     docker: "throwaway123321/velocity-dcos:${gitCommit()}".toString()
 )
