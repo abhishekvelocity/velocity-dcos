@@ -1,5 +1,5 @@
 {
-  "id": "/dockerhub-meaningful-throwaway",
+  "id": "/nginx-mesosphere",
   "cpus": 1,
   "mem": 128,
   "instances": 1,
@@ -30,6 +30,6 @@
   "labels": {
     "DCOS_SERVICE_PORT_INDEX": "0",
     "DCOS_SERVICE_SCHEME": "http",
-    "DCOS_SERVICE_NAME": "dockerhub-meaningful-throwaway"
+    "DCOS_SERVICE_NAME": "nginx-mesosphere"
   }
 }

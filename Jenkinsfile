@@ -30,13 +30,13 @@ node {
 }
 
 // Deploy
-    stage 'Deploy'
+stage 'Deploy'
 
-    marathon(
-        url: 'http://marathon.mesos:8080',
-        forceUpdate: false,
-        credentialsId: 'dockerhub-meaningful-throwaway',
-        filename: 'marathon.json',
-        appId: 'nginx-mesosphere',
-        docker: "throwaway123321/velocity-dcos:${gitCommit()}".toString()
-    )
+marathon(
+    url: 'http://marathon.mesos:8080',
+    forceUpdate: false,
+    credentialsId: 'dockerhub-meaningful-throwaway',
+    filename: 'marathon.json',
+    appId: 'nginx-mesosphere',
+    docker: "throwaway123321/velocity-dcos:${gitCommit()}".toString()
+)
